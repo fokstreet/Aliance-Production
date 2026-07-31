@@ -2,6 +2,10 @@
     box-sizing: border-box;
 }
 
+html {
+    font-size: 1rem;
+}
+
 @font-face {
     font-family: "Bebas Neue";
     src: url("../fonts/BebasNeueBook.woff") format("woff");
@@ -28,7 +32,7 @@ body {
     left: 0;
     top: 0;
     z-index: 2;
-    border-bottom: 1px solid rgba(235, 235, 240, 0.2);
+    border-bottom: .0625rem solid rgba(235, 235, 240, 0.2);
     transition: background-color 0.2s, height 0.2s;
 }
 
@@ -36,6 +40,11 @@ body {
     background-color: #fff;
     color: #292d33;
     height: 72px;
+}
+
+.logo-svg {
+    width: 9rem;
+
 }
 
 .navbar-light .header-logo-path {
@@ -52,7 +61,7 @@ body {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: top right;
-    background-position: center;
+    background-position: center bottom -3.4375rem;
     position: relative;
 }
 
@@ -72,7 +81,7 @@ body {
     padding: 0 50px;
     display: flex;
     align-items: center;
-    border-right: 1px solid rgba(235, 235, 240, 0.2);
+    border-right: .0625rem solid rgba(235, 235, 240, 0.2);
     height: 100%;
 }
 
@@ -80,15 +89,19 @@ body {
     display: flex;
     flex-basis: 100%;
     list-style: none;
-    padding: 0 50px;
+    padding: 0;
+    padding-left: 0 50px;
     margin: 0;
 
 }
 
+.header-nav-item:not(:last-child) {
+    margin-right: 4%;
+}
+
 .header-nav-link {
     text-decoration: none;
-    font-size: 16px;
-    margin-right: 50px;
+    font-size: 1rem;
     color: inherit;
 }
 
@@ -122,6 +135,7 @@ body {
 .navbar-button {
     flex-shrink: 0;
     height: 100%;
+    padding: 25px 50px;
 }
 
 .header-button {
@@ -131,7 +145,7 @@ body {
 .seporator {
     background: #5c8ee6;
     width: 150px;
-    height: 2px;
+    height: .125rem;
 }
 
 .header-content {
@@ -147,6 +161,8 @@ body {
     font-size: 80px;
     line-height: 120%;
     margin: 30px 0;
+    letter-spacing: -0.0563rem;
+    word-spacing: -0.175rem;
 
 }
 
@@ -156,7 +172,6 @@ body {
     font-weight: 400;
     font-size: 16px;
     line-height: 160%;
-    margin-bottom: 50px;
     margin-bottom: 50px;
 }
 
@@ -172,14 +187,21 @@ body {
 
 .header-features-item {
 
-    padding: 30px 50px;
-    border: 1px solid rgba(235, 235, 240, 0.2);
+    padding: 28px 50px;
+    width: 288px;
+    border: .0625rem solid rgba(235, 235, 240, 0.2);
+}
+
+.header-button {
+    padding: 28px 50px;
 }
 
 .header-features-text {
     font-weight: 400;
     font-size: 16px;
     line-height: 160%;
+    margin-bottom: 0;
+    margin-top: 1.125rem;
 
 }
 
@@ -188,15 +210,15 @@ body {
 }
 
 .section {
-    margin-top: 150px;
-    margin-bottom: 150px;
+    margin-top: 9.375rem;
+    margin-bottom: 9.375rem;
 
 }
 
 .section-title {
 
     font-family: "Bebas Neue";
-    font-size: 60px;
+    font-size: 3.75rem;
     line-height: 120%;
     color: #292d33;
 }
@@ -205,16 +227,16 @@ body {
     display: flex;
     list-style: none;
     padding: 0;
-    gap: 30px;
+    gap: 1.875rem;
 }
 
 .steps-item {
-    max-width: 330px;
+    max-width: 20.625rem;
 }
 
 .steps-num {
     font-family: Bebas Neue;
-    font-size: 48px;
+    font-size: 3rem;
     line-height: 120%;
     color: #5c8ee6;
     display: flex;
@@ -223,29 +245,29 @@ body {
 
 .steps-num::after {
     content: "";
-    height: 1px;
+    height: .0625rem;
     background: #ebebf0;
     width: 100%;
     display: inline-block;
-    margin-left: 30px;
+    margin-left: 1.875rem;
 }
 
 .steps-title {
     font-weight: 400;
-    font-size: 28px;
+    font-size: 1.75rem;
     line-height: 160%;
     color: #292d33;
-    margin-top: 30px;
-    margin-bottom: 10px;
+    margin-top: 1.875rem;
+    margin-bottom: .625rem;
 }
 
 .steps-text {
     font-weight: 400;
-    font-size: 16px;
+    font-size: 1rem;
     line-height: 160%;
     color: #828a99;
-    margin-top: 10px;
-    margin-bottom: 20px;
+    margin-top: .625rem;
+    margin-bottom: 1.25rem;
 }
 
 .steps-link {
@@ -253,15 +275,46 @@ body {
     align-items: center;
     text-decoration: none;
     font-weight: 600;
-    font-size: 16px;
+    font-size: 1rem;
     line-height: 160%;
     color: #5c8ee6;
 }
 
 .steps-link::before {
     content: "";
-    height: 1px;
+    height: .0625rem;
     background: #5c8ee6;
-    width: 40px;
-    margin-right: 40px;
+    width: 2.5rem;
+    margin-right: 2.5rem;
+}
+
+
+@media (max-width: 75rem) {
+    html {
+        font-size: .75rem;
+    }
+
+    .header-image {
+        background-position: center;
+    }
+}
+
+@media (max-width: 106.25rem) {
+    html {
+        font-size: .875rem;
+    }
+
+    .header-image {
+        background-position: center;
+    }
+}
+
+@media (max-width: 120rem) {
+    html {
+        font-size: 1rem;
+    }
+
+    .header-image {
+        background-position: center;
+    }
 }
