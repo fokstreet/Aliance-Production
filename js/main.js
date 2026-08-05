@@ -45,7 +45,6 @@ mMenuToggle.addEventListener("click", (event) => {
 
 const swiper = new Swiper('.swiper', {
     speed: 400,
-    autoHeight: true,
     slidesPerView: 4,
     navigation: {
         nextEl: ".slider-button-next",

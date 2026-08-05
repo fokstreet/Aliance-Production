@@ -196,19 +196,20 @@ body {
 
 .header-features {
     display: flex;
-    min-height: 168px;
+    min-height: 10.5rem;
     padding: 0;
     margin-top: 100px;
     list-style: none;
     color: #fff;
     position: relative;
+    height: 100%;
 }
 
 .header-features-item {
-    min-height: 100%;
-    padding: 30px 50px;
-    width: 288px;
-    border: .0625rem solid rgba(235, 235, 240, 0.2);
+    padding: 1.75rem 3.125rem;
+    height: auto;
+    width: 18rem;
+    border: 1px solid rgba(235, 235, 240, 0.2);
 }
 
 .slider-buttons {
