@@ -516,7 +516,7 @@ body {
     }
 }
 
-@media (max-width: 990px) {
+@media (max-width: 992px) {
     .container {
         max-width: 60rem;
     }
@@ -533,6 +533,16 @@ body {
     .header-logo {
         flex-grow: 1;
         justify-content: center;
+        border: none;
+    }
+
+    .logo-svg {
+        max-width: 10rem;
+    }
+
+    .navbar-button {
+        padding-left: 2.3rem;
+        padding-right: 2.3rem;
     }
 
     .mobile-menu-toggle {
@@ -541,7 +551,7 @@ body {
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-        padding: 1.4rem;
+        padding: 2.3rem 2.5rem;
         border-right: 1px solid rgba(235, 235, 240, 0.2);
     }
 
@@ -677,7 +687,7 @@ body {
     }
 
     .header-content {
-        padding-top: 3rem;
+        padding-top: 4rem;
     }
 
     .card {
@@ -690,11 +700,17 @@ body {
         min-width: 90%;
     }
 
-    .header-title {
-        font-size: 2rem;
+    .trademark-card {
+        grid-template-areas:
+            "logo title"
+            "text text"
     }
 
-    .header-content {
-        padding-top: 2rem;
+    .client-list {
+        columns: 1;
+    }
+
+    .clients-logo-item {
+        flex-basis: 50%;
     }
 }
