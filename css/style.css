@@ -438,6 +438,23 @@ body {
     width: 90%;
 }
 
+.trademark-cards {
+    display: flex;
+}
+
+.trademark-card {
+    flex-basis: 50%;
+    text-decoration: none;
+    border: 1px solid #ebebf0;
+    transition: border 0.2s;
+    padding: 3.125rem;
+    display: flex;
+}
+
+.trademark-card:hover {
+    color: #5c8ee6;
+}
+
 @media (max-width: 75rem) {
     html {
         font-size: .75rem;
