@@ -357,6 +357,23 @@ body {
     word-spacing: -0.3387rem;
 }
 
+.steps-buttons {
+    display: none;
+    height: 40px;
+    justify-content: flex-end;
+}
+
+.steps-button-prev,
+.steps-button-next {
+    background: #5c8ee6;
+    height: 100%;
+    width: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
 .steps-link::before {
     content: "";
     height: .0625rem;
@@ -431,6 +448,10 @@ body {
     }
 
     .slider-buttons {
+        display: flex;
+    }
+
+    .steps-buttons {
         display: flex;
     }
 
