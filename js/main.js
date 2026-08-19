@@ -106,3 +106,13 @@ const swiperBlog = new Swiper(".blog-slider", {
 
 });
 
+const modal = document.querySelector(".modal");
+const modalToggle = querySelectorAll("[data-toggle=modal]");
+
+modalToggle.forEach((element) => {
+    element.addEventListener("click", (event) => {
+        event.preventDefault();
+        modal.classList.add("is-open");
+    });
+});
+

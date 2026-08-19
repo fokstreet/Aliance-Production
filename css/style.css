@@ -716,10 +716,13 @@ body {
 
 .input-group-wrapper {
     display: flex;
-    gap: 30px;
+    gap: 1.875rem;
 }
 
-
+.input-group-vertical {
+    display: flex;
+    flex-direction: column;
+}
 
 .input-group {
     position: relative;
@@ -736,7 +739,7 @@ body {
     left: 0;
     padding: 20px 30px;
     border: 1px solid #e4e4eb;
-    background-color: transparent;
+    background-color: inherit;
 
 }
 
@@ -949,13 +952,71 @@ body {
     width: 100%;
     height: 100%;
     background-color: rgba(40, 45, 51, 0.5);
+    z-index: 10;
+    display: flex;
 }
 
-modal.is-open {
+.modal.is-open {
     transform: translateX(0);
     visibility: visible;
     opacity: 1;
 }
+
+.modal-dialog {
+    background: #fff;
+    margin: auto;
+    max-width: 28.75rem;
+    padding: 2.5rem 3.125rem;
+    position: relative;
+}
+
+.modal-close {
+    display: block;
+    position: absolute;
+    top: 40px;
+    right: 50px;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #ebebf0;
+}
+
+.modal-title {
+    font-family: "Bebas Neue";
+    font-stretch: normal;
+    font-weight: 400;
+    font-size: 3rem;
+    line-height: 120%;
+    color: #292d33;
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+.modal-text {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 160%;
+    color: #828a99;
+    margin-bottom: 30px;
+}
+
+.modal-input-group {
+    background-color: #fff;
+}
+
+.modal-form-footer {
+    margin-top: 30px;
+}
+
+.modal-form-button {
+    display: block;
+    width: 100%;
+    margin-bottom: 24px;
+}
+
 
 @media (max-width: 106.25rem) {
     html {
