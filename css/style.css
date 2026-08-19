@@ -46,13 +46,27 @@ body {
     height: 72px;
 }
 
+.logo-dark {
+    display: none;
+}
+
+.navbar-light .logo-light {
+    display: block;
+}
+
+.navbar-light .logo-dark {
+    display: none;
+}
+
+
+.navbar-scroll {
+    height: 4.5rem;
+}
+
 .phone-icon {
     fill: #5c8ee6;
 }
 
-.logo {
-    display: none;
-}
 
 .logo-svg {
     width: 9rem;
