@@ -108,6 +108,7 @@ const swiperBlog = new Swiper(".blog-slider", {
 
 const modal = document.querySelector(".modal");
 const modalToggle = querySelectorAll("[data-toggle=modal]");
+const modalClose = querySelector(".modal-close");
 
 modalToggle.forEach((element) => {
     element.addEventListener("click", (event) => {
@@ -116,3 +117,7 @@ modalToggle.forEach((element) => {
     });
 });
 
+modalClose.addEventListener("click", (event) => {
+    event.preventDefault();
+    modal.classList.add("is-open");
+});
