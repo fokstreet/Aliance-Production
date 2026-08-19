@@ -43,7 +43,6 @@ body {
 .navbar-light {
     background-color: #fff;
     color: #292d33;
-    height: 72px;
 }
 
 .logo-dark {
@@ -51,11 +50,11 @@ body {
 }
 
 .navbar-light .logo-light {
-    display: block;
+    display: none;
 }
 
 .navbar-light .logo-dark {
-    display: none;
+    display: block;
 }
 
 
